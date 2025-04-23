@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surat Izin Tidak Hadir</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Form Surat Izin Tidak Hadir</h1>
+    <form id="izinForm">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" required><br>
+
+      <label for="kelas">Kelas:</label>
+      <input type="text" id="kelas" required><br>
+
+      <label for="tanggal">Tanggal Izin:</label>
+      <input type="date" id="tanggal" required><br>
+
+      <label for="alasan">Alasan:</label>
+      <textarea id="alasan" rows="4" required></textarea><br>
+
+      <button type="button" onclick="buatSurat()">Tampilkan Surat</button>
+    </form>
+
+    <div id="hasilSurat" class="surat"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
